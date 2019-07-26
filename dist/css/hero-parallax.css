@@ -1,0 +1,78 @@
+@import url(https://fonts.googleapis.com/css?family=Alegreya+Sans:100,300,400,500,700,800,900,500italic,400italic,100italic,900italic,300italic,700italic,800italic);
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  border: 0; }
+
+main {
+  height: 150vh;
+  max-height: 100%;
+  overflow-x: hidden;
+  perspective: 1px;
+  perspective-origin: center top;
+  transform-style: preserve-3d;
+  padding: 0 40px;
+  font: 36px/1.6 Alegreya Sans, serif; }
+
+header {
+  height: 80vh;
+  background: url("http://lorempixel.com/g/1500/1000/nature/10/");
+  background-size: cover;
+  background-position: center center;
+  position: relative;
+  vertical-align: top;
+  transform-origin: center top;
+  transform: translateZ(-1px) scale(2); }
+
+section {
+  position: absolute;
+  z-index: 1000;
+  top: 80vh;
+  max-width: 1315px;
+  background: white;
+  height: 100vh;
+  width: 100vw;
+  box-shadow: 0 -2px 1px rgba(0, 0, 0, 0.15);
+  border-top: 1px solid rgba(255, 255, 255, 0.2); }
+
+h1 {
+  font-size: 30px;
+  font-weight: 400;
+  padding: 10px 20px; }
+
+p {
+  font-size: 18px;
+  font-size: 300;
+  padding: 0 20px; }
+
+a {
+  text-decoration: none;
+  color: dodgerblue; }
+
+html, body {
+  height: 100%; }
+
+body {
+  background: #333; }
+
+/*sticky header position*/
+.sticky.is-sticky {
+  position: sticky;
+  left: 0;
+  right: 0;
+  top: 0;
+  z-index: 1000;
+  width: 100%; }
+
+body {
+  min-height: 1200px; }
+
+nav {
+  background: #6e767a;
+  min-height: 85px; }
+
+style {
+  left: 0;
+  right: 0;
+  bottom: 0; }
