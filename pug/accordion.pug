@@ -1,42 +1,31 @@
-<!DOCTYPE html>
-html(lang="en")
-    head
-        meta(charset="UTF-8")
-        meta(name="viewport", content="width=device-width, initial-scale=1.0")
-        meta(http-equiv="X-UA-Compatible", content="ie=edge")
-        title Accordion
-        link(rel="stylesheet", href="css/accordion.css")
-        link(rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous")
-    body
-        section
-            #accordion(role='tablist')
-                .card
-                    #headingOne.card-header(role='tab')
-                        h5.mb-0
-                            a(data-toggle='collapse' href='#collapseOne' aria-expanded='false' aria-controls='collapseOne')
-                                | Collapsible Group Item #1
-                    #collapseOne.collapse(role='tabpanel' aria-labelledby='headingOne' data-parent='#accordion')
-                        .card-body
-                            | Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven&apos;t heard of them accusamus labore sustainable VHS.
-                .card
-                    #headingTwo.card-header(role='tab')
-                        h5.mb-0
-                            a.collapsed(data-toggle='collapse' href='#collapseTwo' aria-expanded='false' aria-controls='collapseTwo')
-                                | Collapsible Group Item #2
-                    #collapseTwo.collapse(role='tabpanel' aria-labelledby='headingTwo' data-parent='#accordion')
-                        .card-body
-                            | Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven&apos;t heard of them accusamus labore sustainable VHS.
-                .card
-                    #headingThree.card-header(role='tab')
-                        h5.mb-0
-                            a.collapsed(data-toggle='collapse' href='#collapseThree' aria-expanded='false' aria-controls='collapseThree')
-                                | Collapsible Group Item #3
-                    #collapseThree.collapse(role='tabpanel' aria-labelledby='headingThree' data-parent='#accordion')
-                        .card-body
-                            | Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven&apos;t heard of them accusamus labore sustainable VHS.
+.parallax__layer.parallax__layer--base(itemprop = 'content')
+    #accordion(role='tablist')
+        .card
+            #headingOne.card-header(role='tab')
+                h5.mb-0
+                    a(data-toggle='collapse' href='#collapseOne' aria-expanded='false' aria-controls='collapseOne')
+                        | Collapsible Group Item #1
+            #collapseOne.collapse(role='tabpanel' aria-labelledby='headingOne' data-parent='#accordion')
+                .card-body.abstract
+                    .collapse-content(itemprop='articleBody')
+                        | DA resultant cliché criticized, for such high life denounce Terry Richardson for squid. 3 wolf moon services, not cupidatat a skateboard consumer brunch. Food Truck of quinoa do not know how my toil, such a context. 3 wolf moon brunch time, but they put a bird on it some squid single-origin coffee will not take Shoreditch. There is nothing of my soul keffiyeh helvetica, craft beer cred do not know how the labor of the wise man the things Wes Anderson excepteur. For a vegan butcher excepteur vice lomo. Leggings blacks craft beer farm-to-table, raw denim aesthetic synth do not know you probably have not heard of them denounce labor and sustainable VHS.
+        .card
+            #headingTwo.card-header(role='tab')
+                h5.mb-0
+                    a.collapsed(data-toggle='collapse' href='#collapseTwo' aria-expanded='false' aria-controls='collapseTwo')
+                        | Collapsible Group Item #2
+            #collapseTwo.collapse(role='tabpanel' aria-labelledby='headingTwo' data-parent='#accordion')
+                .card-body.abstract
+                    .content(itemprop='articleBody')
+                        | DA resultant cliché criticized, for such high life denounce Terry Richardson for squid. 3 wolf moon services, not cupidatat a skateboard consumer brunch. Food Truck of quinoa do not know how my toil, such a context. 3 wolf moon brunch time, but they put a bird on it some squid single-origin coffee will not take Shoreditch. There is nothing of my soul keffiyeh helvetica, craft beer cred do not know how the labor of the wise man the things Wes Anderson excepteur. For a vegan butcher excepteur vice lomo. Leggings blacks craft beer farm-to-table, raw denim aesthetic synth do not know you probably have not heard of them denounce labor and sustainable VHS.
+        .card
+            #headingThree.card-header(role='tab')
+                h5.mb-0
+                    a.collapsed(data-toggle='collapse' href='#collapseThree' aria-expanded='false' aria-controls='collapseThree')
+                        | Collapsible Group Item #3
+            #collapseThree.collapse(role='tabpanel' aria-labelledby='headingThree' data-parent='#accordion')
+                .card-body.abstract
+                    .content(itemprop='articleBody')
+                        | DA resultant cliché criticized, for such high life denounce Terry Richardson for squid. 3 wolf moon services, not cupidatat a skateboard consumer brunch. Food Truck of quinoa do not know how my toil, such a context. 3 wolf moon brunch time, but they put a bird on it some squid single-origin coffee will not take Shoreditch. There is nothing of my soul keffiyeh helvetica, craft beer cred do not know how the labor of the wise man the things Wes Anderson excepteur. For a vegan butcher excepteur vice lomo. Leggings blacks craft beer farm-to-table, raw denim aesthetic synth do not know you probably have not heard of them denounce labor and sustainable VHS.
 
-        script(src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous")
-        script(src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous")
-        script(src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous")    
-        
-                
+    //- include ./navbar.pug

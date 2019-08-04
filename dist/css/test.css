@@ -91,12 +91,16 @@ body, html {
   font-family: 'FontAwesome';
   position: absolute;
   right: 0;
-  color: black; }
+  color: black;
+  font-size: 25px;
+  font-weight: bold; }
 
 .mb-0 > a[aria-expanded="true"]:after {
   content: "-";
   /* fa-chevron-up */
-  color: black; }
+  color: black;
+  font-size: 25px;
+  font-weight: bold; }
 
 .containers {
   width: 100%;

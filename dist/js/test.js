@@ -1,17 +1,7 @@
-// Menu-toggle button
-$(document).ready(function() {
+$(document).click(function(e) {
+	if (!$(e.target).is('.card-body')) {
+    	$('.collapse').collapse('hide');	    
+    }
     
-    $(".menu-icon").on("click", function() {
-        
-        $("nav ul").toggleClass("showing");
-    });
 });
-    // Scrolling Effect
-$(window).on("scroll", function() {
-    if($(window).scrollTop()) {
-        $('nav').addClass('black');
-    }
-    else {
-        $('nav').removeClass('black');
-    }
-})
+

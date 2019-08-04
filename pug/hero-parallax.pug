@@ -1,18 +1,21 @@
-<!DOCTYPE html>
-html(lang="en")
-    head
-        meta(charset="UTF-8")
-        meta(name="viewport", content="width=device-width, initial-scale=1.0")
-        meta(http-equiv="X-UA-Compatible", content="ie=edge")
-        link(rel="stylesheet", href="css/hero-parallax.css")
-        title Hero Banner
-    body
-        main
-            header
-                
-            section
-                h1 CSS Parallax Header Image
-                p This demo uses a method discovered by Keith Clark to create parallax effects in CSS, without a ton of janky Javascript and bloated jQuery plugins. 
-
-            
-        //- script(src = 'js/parallax.js')
+#group1.parallax__group
+                        .parallax__layer.parallax__layer--back
+                            //- img.codepen_image(src='https://wallpapercave.com/wp/CJuzwZM.jpg')     
+                            #carouselExampleIndicators.carousel.slide(data-ride='carousel')
+                                ol.carousel-indicators
+                                    li.active(data-target='#carouselExampleIndicators' data-slide-to='0')
+                                    li(data-target='#carouselExampleIndicators' data-slide-to='1')
+                                    li(data-target='#carouselExampleIndicators' data-slide-to='2')
+                                .carousel-inner(style = 'height: 64vh')
+                                    .carousel-item.active
+                                        img.d-block.w-100(src='http://images2.fanpop.com/images/photos/7800000/Nature-Full-HD-Wallpaper-national-geographic-7822275-1920-1080.jpg' style='height : 500px ' alt='...' itemprop="image")
+                                    .carousel-item
+                                        img.d-block.w-100(src='http://images2.fanpop.com/images/photos/7800000/Nature-Full-HD-Wallpaper-national-geographic-7822272-1920-1080.jpg' style='height : 500px' alt='...' itemprop="image")
+                                    .carousel-item
+                                        img.d-block.w-100(src='https://newevolutiondesigns.com/images/freebies/hd-wallpaper-48.jpg' style='height : 500px' alt='...' itemprop="image")
+                                a.carousel-control-prev(href='#carouselExampleIndicators' role='button' data-slide='prev')
+                                    span.carousel-control-prev-icon(aria-hidden='true')
+                                    span.sr-only Previous
+                                a.carousel-control-next(href='#carouselExampleIndicators' role='button' data-slide='next')
+                                    span.carousel-control-next-icon(aria-hidden='true')
+                                    span.sr-only Next
